@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General style */
+html,
+body {
+  @apply scroll-smooth font-fontbody;
+}
+
+.container {
+  @apply px-[1.5rem] mx-auto w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+}
+
+/* header Links */
+.navber {
+  @apply sticky top-0 bg-bg z-10;
+}
+.navber .head {
+  @apply py-1.5 flex justify-between items-center;
+}
+.navber .links ul {
+  @apply flex gap-6 justify-center;
+}
+.navber .links ul li {
+  @apply hover:text-link hover:font-bold text-text;
+}
+
+/* Header content  */
+.row {
+  @apply grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 py-12 text-center gap-3;
+}
+.row .col {
+  @apply px-3 my-4;
+}
+.row .icon {
+  @apply text-5xl pr-[20px] text-icon mb-3;
+}
+.row .head {
+  @apply text-2xl  font-bold mb-3;
+}
+.row .desc {
+  @apply text-text   leading-loose !text-start text-[1rem];
+}
+
+/* specail title */
+.special {
+  @apply py-8 text-center;
+}
+.special .title {
+  @apply text-[80px] font-extrabold text-specail tracking-tighter;
+}
+.special .text {
+  @apply text-text text-[20px] -mt-[45px];
+}
+
+/* services */
+.services .row {
+  @apply grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1  max-xl:grid-cols-3   py-12 text-center;
+}
+.services .row .icon {
+  @apply !text-[32px];
+}
+
+/* Portfolio */
+.row .card {
+  @apply border border-black border-opacity-20 rounded;
+}
+.row .card .desc-card {
+  @apply p-4 text-start;
+}
+.row .card .desc-card h2 {
+  @apply py-2 text-[calc(1.275rem+0.3vw)];
+}
+.row .card .desc-card p {
+  @apply text-text leading-loose;
+}
+
+/* About */
+#about .row {
+  @apply grid grid-cols-2 max-sm:grid-cols-1 text-start gap-10;
+}
+#about .row .text:first-child {
+  @apply sm:border-r-[3px]  border-icon max-sm:border-b-[3px] max-sm:pb-8;
+}
