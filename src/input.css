@@ -34,7 +34,7 @@ body {
   @apply grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 py-12 text-center gap-3;
 }
 .row .col {
-  @apply px-3 my-4;
+  @apply my-4;
 }
 .row .icon {
   @apply text-5xl pr-[20px] text-icon mb-3;
@@ -62,7 +62,7 @@ body {
   @apply grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1  max-xl:grid-cols-3   py-12 text-center;
 }
 .services .row .icon {
-  @apply !text-[32px];
+  @apply text-[32px];
 }
 
 /* Portfolio */

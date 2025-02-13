@@ -11,11 +11,11 @@
   </head>
   <body>
     <!-- header links -->
-    <div class="navber">
+    <div class="navber max-sm:hidden">
       <div class="container">
         <div class="head">
           <div class="logo">
-            <img src="../img/logo.png" class="w-[100px]" />
+            <img src="../img/logo.png" class="w-[100px] -ml-1" />
           </div>
           <div class="links">
             <ul>
@@ -30,14 +30,69 @@
       </div>
     </div>
 
+    <!-- header links for mobile -->
+    <div class="nav-mobile hidden max-sm:block">
+      <div class="container">
+        <div class="head py-1.5 flex items-center justify-between">
+          <div class="logo">
+            <img src="../img/logo.png" class="w-[90px] -ml-1" />
+          </div>
+          <div class="icon">
+            <i class="fa-solid fa-bars text-2xl toggle cursor-pointer"></i>
+          </div>
+
+          <div
+            class="links px-3 -translate-x-full transition ease-in-out duration-500 fixed bottom-0 top-0 left-0 z-10 h-screen w-3/4 bg-bg"
+          >
+            <div class="text-2xl py-2 flex justify-between items-center">
+              <h3 class="text-2xl font-bold text-footer">NavBar</h3>
+              <b class="text-3xl close text-red-700">&times;</b>
+            </div>
+            <ul class="py-3">
+              <li
+                class="text-xl pb-2 hover:text-link hover:font-bold text-text"
+              >
+                <a href="#home">Home</a>
+              </li>
+              <li
+                class="text-xl pb-2 hover:text-link hover:font-bold text-text"
+              >
+                <a href="#services">Services</a>
+              </li>
+              <li
+                class="text-xl pb-2 hover:text-link hover:font-bold text-text"
+              >
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li
+                class="text-xl pb-2 hover:text-link hover:font-bold text-text"
+              >
+                <a href="#about">About</a>
+              </li>
+              <li
+                class="text-xl pb-2 hover:text-link hover:font-bold text-text"
+              >
+                <a href="#content">Content</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- header content  -->
     <div class="header bg-bg" id="home">
       <div class="big-image relative">
         <div class="image w-full">
-          <img src="../img/landing1.jpg" class="w-screen h-screen" />
+          <img
+            src="../img/landing1.jpg"
+            class="w-full h-screen max-md:h-full"
+          />
         </div>
-        <div class="text absolute top-1/4 left-1/2 -translate-x-1/2">
-          <h2 class="text-link text-6xl font-bold">Hello There</h2>
+        <div
+          class="absolute top-1/4 max-sm:left-1/4 max-sm:-translate-x-1/4 left-1/2 -translate-x-1/2"
+        >
+          <h2 class="text-link text-5xl font-bold">Hello There</h2>
         </div>
       </div>
       <div class="container">
